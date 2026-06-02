@@ -1,3 +1,4 @@
+@tool
 extends TextureButton
 var id
 signal TogglePressed(idb)

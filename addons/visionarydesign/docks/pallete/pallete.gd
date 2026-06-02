@@ -1,12 +1,14 @@
+@tool
 extends Control
 var dockGrids
 @export var dock:PackedScene
 @export var bullb:PackedScene
-var buttonlist=[]
+var buttonlist=[] 
 
 func _ready() -> void:
 	dockGrids=[]
 	add_docks()
+	print(211)
 	
 func add_docks():
 	for i in $MarginContainer/TabContainer.get_children():
@@ -17,7 +19,6 @@ func add_docks():
 		$MarginContainer/TabContainer.add_child(newdoc)
 		dockGrids.append(newdoc.get_child(0).get_child(0))
 	add_buttons()
-	
 func add_buttons():
 	for i in range(VisDes.bulletList.BulletTextures.size()):
 		var newbul=bullb.instantiate()
@@ -35,3 +36,4 @@ func TogglePressed(id):
 		buttonlist[VisDes.currentbullet].button_pressed=false
 		VisDes.currentbullet=id
 	print(VisDes.currentbullet)
+	   

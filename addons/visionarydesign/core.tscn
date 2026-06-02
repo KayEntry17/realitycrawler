@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://8jmdxmw46vjs"]
+
+[ext_resource type="Script" uid="uid://bdwm2bstfu0x3" path="res://addons/visionarydesign/core.gd" id="1_6hwhs"]
+[ext_resource type="Resource" uid="uid://c3mtbeb0o1k4l" path="res://addons/visionarydesign/Resources/BulletList/BulletListGeneric.tres" id="2_6hwhs"]
+
+[node name="Node" type="Node" unique_id=1771709093]
+script = ExtResource("1_6hwhs")
+bulletList = ExtResource("2_6hwhs")
+taglist = Array[String](["basic", "multi", "homing", "special"])

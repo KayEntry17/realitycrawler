@@ -1,0 +1,13 @@
+[gd_resource type="Resource" format=3 uid="uid://c3mtbeb0o1k4l"]
+
+[ext_resource type="Script" uid="uid://citar0dmyqvf5" path="res://addons/visionarydesign/Resources/BulletList/bullist.gd" id="1_gy1ov"]
+[ext_resource type="PackedScene" uid="uid://cjt3pv2gcsowo" path="res://addons/visionarydesign/objectTypes/GenericBullet/GenericBulletExample.tscn" id="1_kuas8"]
+[ext_resource type="PackedScene" uid="uid://d3iinoi4hmdgf" path="res://addons/visionarydesign/objectTypes/simpleBullet/SimpleBulletExample.tscn" id="2_14soe"]
+[ext_resource type="Texture2D" uid="uid://q2mllmbewx1y" path="res://addons/visionarydesign/assets/stockBullets/Small_bullet.png" id="3_wf263"]
+[ext_resource type="Texture2D" uid="uid://k0vdl64j67a" path="res://addons/visionarydesign/assets/stockBullets/Rocket.png" id="4_t24ft"]
+
+[resource]
+script = ExtResource("1_gy1ov")
+BulletObjects = Array[PackedScene]([ExtResource("1_kuas8"), ExtResource("2_14soe")])
+BulletTextures = Array[Texture2D]([ExtResource("3_wf263"), ExtResource("4_t24ft")])
+BulletTags = Array[int]([0, 1])

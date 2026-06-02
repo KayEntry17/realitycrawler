@@ -1,5 +1,9 @@
 [gd_scene format=3 uid="uid://tnee1d40ch67"]
 
+[ext_resource type="Script" uid="uid://bn7yr14dxqtvh" path="res://addons/visionarydesign/docks/pallete/pallete.gd" id="1_weo2j"]
+[ext_resource type="PackedScene" uid="uid://cr2mtsmbiov20" path="res://addons/visionarydesign/docks/pallete/dock.tscn" id="2_81mqy"]
+[ext_resource type="PackedScene" uid="uid://dx4melgh3dafs" path="res://addons/visionarydesign/docks/pallete/button.tscn" id="3_vc1kd"]
+
 [node name="Control" type="Control" unique_id=879774883]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +11,21 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_weo2j")
+dock = ExtResource("2_81mqy")
+bullb = ExtResource("3_vc1kd")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1613954604]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="TabContainer" type="TabContainer" parent="MarginContainer" unique_id=1976841118]
+layout_mode = 2

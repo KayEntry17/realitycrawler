@@ -6,10 +6,12 @@
 [ext_resource type="Script" uid="uid://bsn7u5njblb2i" path="res://addons/visionarydesign/docks/pallete/button.gd" id="3_rgeva"]
 
 [node name="Control" type="TextureButton" unique_id=1903048760]
+custom_minimum_size = Vector2(75, 75)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -2.0
+offset_left = 1.0
+offset_right = -1.0
 offset_bottom = 4.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -19,13 +21,20 @@ texture_pressed = ExtResource("2_0md4x")
 stretch_mode = 4
 script = ExtResource("3_rgeva")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=66377337]
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1631194593]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 7
+theme_override_constants/margin_top = 7
+theme_override_constants/margin_right = 7
+theme_override_constants/margin_bottom = 7
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer" unique_id=66377337]
+layout_mode = 2
 texture = ExtResource("3_0md4x")
 expand_mode = 2
 stretch_mode = 4

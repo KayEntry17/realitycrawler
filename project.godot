@@ -14,9 +14,13 @@ config/name="Reality_Crawler"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+VisDes="*uid://8jmdxmw46vjs"
+
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
+enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg", "res://addons/visionarydesign/plugin.cfg")
 
 [physics]
 
